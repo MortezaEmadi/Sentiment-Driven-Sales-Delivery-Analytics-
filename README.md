@@ -1,8 +1,5 @@
-# Sentiment-Driven-Sales-Delivery-Analytics-
-Ecommerce Analytics through: SQL Server → XLM-RoBERTa (multilingual sentiment) → Power BI
-
 # Sentiment-Driven Sales & Delivery Analytics
-**SQL Server → XLM-RoBERTa (multilingual sentiment) → Power BI**  
+**Ecommerce Analytics through:SQL Server → XLM-RoBERTa (multilingual sentiment) → Power BI**  
 _100K+ Olist orders with Portuguese reviews_
 
 > **Repo focus**
@@ -33,7 +30,7 @@ _100K+ Olist orders with Portuguese reviews_
 ## 2) Data Model (Star Schema)
 
 **ER sketch (paste your image):**  
-`![Star Schema](docs/img/star_schema.png)`
+`![Star Schema](img/star_schema.png)`
 
 ---
 
@@ -85,11 +82,11 @@ reviews.to_csv(out_path, index=False)
 * **AOV** = revenue ÷ orders
 
 **Example visuals (paste your images):**
-`![Sales Panel (Showing States Dist. on Tooltip)](docs/img/kpi_cards.png)'
-`![Payment/Installments/Product Panel (Showing Cities Dist. on Tooltip)](docs/img/installments_mix.png)`
-`![Reviews and Sentiments Panel](docs/img/delay_vs_score.png)`
-`![State Map](docs/img/state_map.png)`
-`![Sentiment Bar](docs/img/sentiment_bar.png)`
+`![Sales Panel (Showing States Dist. on Tooltip)](img/kpi_cards.png)'
+`![Payment/Installments/Product Panel (Showing Cities Dist. on Tooltip)](img/installments_mix.png)`
+`![Reviews and Sentiments Panel](img/delay_vs_score.png)`
+`![State Map](img/state_map.png)`
+`![Sentiment Bar](img/sentiment_bar.png)`
 
 **Simple alert rules**
 
@@ -108,8 +105,8 @@ reviews.to_csv(out_path, index=False)
 * **Regional focus**: rank states/cities by **delay + negative sentiment** clusters.
 
 **More visuals (paste your images):**
-`![Delay Bins vs Score](docs/img/delay_bins_score.png)`
-`![Price vs Score Over Time](docs/img/price_vs_score.png)`
+`![Delay Bins vs Score](img/delay_bins_score.png)`
+`![Price vs Score Over Time](img/price_vs_score.png)`
 
 ---
 
@@ -215,14 +212,14 @@ ORDER BY y.[year];
 * `sql/queries.sql` — SQL build + views
 * `notebooks/sentiment_xlmr.ipynb` — sentiment labeling
 * `powerbi/Dashboard.pbix` — model + visuals
-* `docs/img/...` — result images
+* `/img/...` — result images
 
 ---
 
 ## 9) Data and License
 
 * Data: **Brazilian E-Commerce Public Dataset by Olist** (Kaggle).
-* Follow dataset terms when sharing outputs.
+* Follow dataset terms when using the repo.
 
 
 
